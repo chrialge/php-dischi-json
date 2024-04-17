@@ -16,6 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <!-- /cdn bootstrap -->
     <title>Document</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css' integrity='sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==' crossorigin='anonymous' referrerpolicy='no-referrer' />
     <link href='./assets/css/style.css' rel='stylesheet'>
 </head>
 
@@ -52,7 +53,20 @@
         </main>
 
         <div class="modal-es" v-show="display">
+            <button type="button" class="btn_close_modal" aria-label="Close" @click="display = !display">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="container d-flex align-items-center justify-content-center h-100">
+                <div class="container_card">
+                    <img :src="discoActive.poster" alt="">
+                    <div class="card-body text-center text-light mt-3">
+                        <h4 class="card-title">{{discoActive.title}}</h4>
+                        <p class="card-text">{{discoActive.author}}</p>
+                        <h4 class="card-title">{{discoActive.year}}</h4>
 
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- /#site_main -->
         <!-- <ul v-for="disco in dischi">

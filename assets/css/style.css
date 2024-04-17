@@ -35,7 +35,7 @@
 }
 
 .modal-es{
-    background-color: #112030;  
+    background-color: rgba(17, 32, 48, 0.9);  
     height: calc(100% - 40px);
     width: calc(100% - 40px);
     border-radius: 15px;
@@ -43,4 +43,19 @@
     z-index: 2;
     position: absolute;
     top: 0;
+
+    .btn_close_modal{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        border: 1px solid white;
+        padding: 15px;
+        background-color: transparent;
+        border-radius: 0.5rem;
+        color: white;
+        
+        i{
+            font-size: 25px;
+        }
+    }
   }
