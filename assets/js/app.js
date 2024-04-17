@@ -12,6 +12,10 @@ createApp({
         }
     },
     methods: {
+        /**
+         * function che passa tutto l'oggetto del disco cliccato e lo inserisce in discoActive
+         * @param {Object} disco object clicked 
+         */
         discoInfo(disco) {
             console.log(disco)
             this.display = !this.display
@@ -19,6 +23,8 @@ createApp({
         }
     },
     mounted() {
+
+
         axios.get(this.url)
             .then((result) => {
                 console.log(result);
