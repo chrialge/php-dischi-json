@@ -20,14 +20,48 @@
 </head>
 
 <body>
+
+
     <div id='app'>
-        <ul v-for="disco in dischi">
+
+        <header id="site_header" class="py-3">
+            <div class="container-fluid">
+                <img src="./assets/img/Spotify_logo_without_text.svg.webp" alt="">
+            </div>
+        </header>
+        <main id="site_main" class="w-100">
+            <div class="container py-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
+                    <div class="col" v-for="disco in dischi">
+                        <div class="card card_bg rounded-3" @click="discoInfo(disco)">
+                            <div class="container_img py-3 px-5">
+                                <img class="card-img-top" :src="disco.poster" alt="Title" />
+                            </div>
+                            <div class="card-body text-center text-light">
+                                <h4 class="card-title">{{disco.title}}</h4>
+                                <p class="card-text">{{disco.author}}</p>
+                                <h4 class="card-title">{{disco.year}}</h4>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <div class="modal-es" v-show="display">
+
+        </div>
+        <!-- /#site_main -->
+        <!-- <ul v-for="disco in dischi">
             <li>{{disco.title}}</li>
             <li>{{disco.author}}</li>
             <li>{{disco.year}}</li>
             <li>{{disco.poster}}</li>
             <li>{{disco.genre}}</li>
-        </ul>
+        </ul> -->
     </div>
 
 

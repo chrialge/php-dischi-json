@@ -1,3 +1,46 @@
-body{
-    background-color: white;
+:root{
+    --bg-body: #1D2D3C;
+    --bg-header: #06131F;
+    --bg-card: #112030;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+
+#site_header{
+    background-color: var(--bg-header);
+
+    .container-fluid{
+
+        img{
+            width: 80px;
+            margin-left: 80px;
+        }
+    }
+}
+
+#site_main{
+    background-color: var(--bg-body);
+    height: 100vh;
+
+    .card_bg{
+        background-color: var(--bg-card);
+    }
+
+}
+
+.modal-es{
+    background-color: #112030;  
+    height: calc(100% - 40px);
+    width: calc(100% - 40px);
+    border-radius: 15px;
+    margin: 20px;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+  }
