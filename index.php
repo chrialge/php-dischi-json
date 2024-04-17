@@ -48,10 +48,12 @@
 
                         <!-- event get disco ciclked  -->
                         <div class="card card_bg rounded-3" @click="discoInfo(disco)">
+
                             <div class="container_img py-3 px-5">
                                 <!-- get value of the key 'poster' for ever disco -->
                                 <img class="card-img-top" :src="disco.poster" alt="Title" />
                             </div>
+
                             <div class="card-body text-center text-light">
                                 <!-- get value of the key 'title' for ever disco -->
                                 <h4 class="card-title">{{disco.title}}</h4>
@@ -59,8 +61,8 @@
                                 <p class="card-text">{{disco.author}}</p>
                                 <!-- get value of the key 'year' for ever disco -->
                                 <h4 class="card-title">{{disco.year}}</h4>
-
                             </div>
+
                         </div>
                     </div>
                     <!-- loop for ever dischi -->
@@ -80,13 +82,15 @@
             <div class="container d-flex align-items-center justify-content-center h-100">
                 <div class="container_card">
                     <!-- get value of the key 'poster' for ever disco -->
-                    <img :src="discoActive.poster" alt="">
-                    <!-- get value of the key 'title' for ever disco -->
-                    <h4 class="card-title">{{discoActive.title}}</h4>
-                    <!-- get value of the key 'author' for ever disco -->
-                    <p class="card-text">{{discoActive.author}}</p>
-                    <!-- get value of the key 'year' for ever disco -->
-                    <h4 class="card-title">{{discoActive.year}}</h4>
+                    <img :src="discoActive.poster" alt="" style="width: 550px;">
+                    <div class="card-body text-center text-light mt-3">
+                        <!-- get value of the key 'title' for ever disco -->
+                        <h4 class="card-title">{{discoActive.title}}</h4>
+                        <!-- get value of the key 'author' for ever disco -->
+                        <p class="card-text">{{discoActive.author}}</p>
+                        <!-- get value of the key 'year' for ever disco -->
+                        <h4 class="card-title">{{discoActive.year}}</h4>
+                    </div>
 
                 </div>
             </div>
