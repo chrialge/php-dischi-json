@@ -39,7 +39,7 @@
         <!-- /site header -->
 
         <!-- /#site_main -->
-        <main id="site_main" class="w-100">
+        <main id="site_main" class="py-5">
             <div class="container py-5">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
 
